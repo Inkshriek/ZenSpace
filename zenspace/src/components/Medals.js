@@ -11,6 +11,7 @@ const Medals = () => {
           <div id="header">
             {/*This should be shown at the top for mobile and at the side for desktop*/}
             <h1>ZenSpace</h1>
+            <img src = "img/Logo.png" style={{width: '200px', height: '200px'}} alt = "logo of zenspace"></img>
             <ul id="nav">
               <li><a href="home.html">Today</a></li>
               <li><a href="guides.html">Guides</a></li>
@@ -34,27 +35,27 @@ const Medals = () => {
               <ul className="medalslist">
                 <li className="medal">
                   <h4>Join ZenSpace</h4>
-                  <img src="img/joinedbadge.png" style={{width: '150px', height: '150px'}} alt="Medal Image" />
+                  <img src="img/joinedbadge.png" style={{width: '150px', height: '150px'}} alt="Medal for joining ZenSpace" />
                   <div>Completed!</div>
                 </li>
                 <li className="medal">
                   <h4>Shared ZenSpace with a Friend</h4>
-                  <img src="img/sharedbadge.png" style={{width: '150px', height: '150px'}} alt="Medal Image" />
+                  <img src="img/sharedbadge.png" style={{width: '150px', height: '150px'}} alt="Medal for sharing ZenSpace" />
                   <div>Completed!</div>
                 </li>
                 <li className="medal">
                   <h4>First Guide</h4>
-                  <img src="img/guidebadge.png" style={{width: '150px', height: '150px'}} alt="Medal Image" />
+                  <img src="img/guidebadge.png" style={{width: '150px', height: '150px'}} alt="Medal for creating your first guide" />
                   <div>Completed!</div>
                 </li>
                 <li className="medal">
                   <h4>First Journal</h4>
-                  <img src="img/journalbadge.png" style={{width: '150px', height: '150px'}} alt="Medal Image" />
+                  <img src="img/journalbadge.png" style={{width: '150px', height: '150px'}} alt="Medal for creating your first journal" />
                   <div>Completed!</div>
                 </li>
                 <li className="medal">
                   <h4>First Check-In</h4>
-                  <img src="img/checkinbadge.png" style={{width: '150px', height: '150px'}} alt="Medal Image" />
+                  <img src="img/checkinbadge.png" style={{width: '150px', height: '150px'}} alt="Medal for your first check-in" />
                   <div>Completed!</div>
                 </li>
                 <li className="medal">

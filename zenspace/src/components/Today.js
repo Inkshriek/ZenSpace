@@ -11,6 +11,7 @@ const home = () => {
     <div id="header">
       {/*This should be shown at the top for mobile and at the side for desktop*/}
       <h1>ZenSpace</h1>
+      <img src = "img/Logo.png" style={{width: '200px', height: '200px'}} alt = "logo of zenspace"></img>
       <ul id="nav">
         <li>Today</li>
         <li><a href="guides.html">Guides</a></li>
@@ -63,10 +64,12 @@ const home = () => {
       <div className="panel" id="dailyhelp">
         <h2>Tip of the Day</h2>
         <div id="dailyhelptip">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nibh a augue semper faucibus nec in magna.
+          <p>“Relax, let your worries go, remember to breathe in”</p>
+          <p>“Live in the moment, don’t stress on the past, move forward”</p>
+          <p>“Do not stress over events that have happened, because you will stress over them before they happen and when they happen”</p>
         </div>
         <div id="dailyhelpimage">
-          <img src alt="Tip Image" />
+        <img src="img/quote1.jpg" style={{width: '200px', height: '200px'}} alt="Life has no limitations except the ones you make" />
         </div>
       </div>
       <br />

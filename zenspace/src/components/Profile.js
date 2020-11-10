@@ -11,6 +11,7 @@ const Profile = () => {
           <div id="header">
             {/*This should be shown at the top for mobile and at the side for desktop*/}
             <h1>ZenSpace</h1>
+            <img src = "img/Logo.png" style={{width: '200px', height: '200px'}} alt = "logo of zenspace"></img>
             <ul id="nav">
               <li><a href="home.html">Today</a></li>
               <li><a href="guides.html">Guides</a></li>

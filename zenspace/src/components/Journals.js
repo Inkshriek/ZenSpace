@@ -11,6 +11,7 @@ const Journal = () => {
           <div id="header">
             {/*This should be shown at the top for mobile and at the side for desktop*/}
             <h1>ZenSpace</h1>
+            <img src = "img/Logo.png" style={{width: '200px', height: '200px'}} alt = "logo of zenspace"></img>
             <ul id="nav">
               <li><a href="home.html">Today</a></li>
               <li><a href="guides.html">Guides</a></li>
@@ -36,7 +37,7 @@ const Journal = () => {
                 {/*Journals will populate this list when read from the server.*/}
                 <li>
                   <div className="journalentry">
-                    <h3>Sample Journal</h3>
+                    <h3>Meditation Journal</h3>
                     <div>Date: 10/17/2020</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis tellus ac nisl dictum suscipit id vel tellus. Mauris vestibulum euismod massa ac sagittis. Donec sit amet orci a mauris elementum aliquam. Praesent fringilla hendrerit aliquet. Proin tempor laoreet ligula at aliquam. Curabitur volutpat elit nec ex dictum finibus quis et erat. Sed eu molestie urna.</p>
                     <div className="mood">Mood Rating: 6/10</div>
@@ -45,7 +46,7 @@ const Journal = () => {
                 </li>
                 <li>
                   <div className="journalentry">
-                    <h3>Sample Journal</h3>
+                    <h3>Relaxation Journal</h3>
                     <div>Date: 10/21/2020</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis tellus ac nisl dictum suscipit id vel tellus. Mauris vestibulum euismod massa ac sagittis. Donec sit amet orci a mauris elementum aliquam. Praesent fringilla hendrerit aliquet. Proin tempor laoreet ligula at aliquam. Curabitur volutpat elit nec ex dictum finibus quis et erat. Sed eu molestie urna.</p>
                     <div className="mood">Mood Rating: 9/10</div>

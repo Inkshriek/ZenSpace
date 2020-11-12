@@ -1,33 +1,95 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
- 
-import Home from './components/Today';
-import About from './components/About';
-import Journals from './components/Journals';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from 'react-router-dom';
+import { CookiesProvider, useCookies } from "react-cookie";
+import Login from './components/Login';
+import Today from './components/Today';
 import Guides from './components/Guides';
+import Journals from './components/Journals';
 import Medals from './components/Medals';
 import Profile from './components/Profile';
-import Navigation from './components/Navigation';
- 
-class App extends Component {
-  render() {
-    return (      
-       <BrowserRouter>
-        <div>
-          <Navigation />
+import About from './components/About';
+import './App.css';
+function App() {
+  const [cookies] = useCookies(["user"]);
+
+  if (cookies.user == "" || cookies.user == null) {
+    return (    
+      <CookiesProvider>
+        <Login/>
+      </CookiesProvider>
+    );
+  }
+  else {
+    return (
+      <div className="App">
+        <CookiesProvider>
+          <Router>
+            <div id="header">
+                <h1>ZenSpace</h1>
+                <nav>
+                  <ul>
+                    <li><NavLink 
+                      to="/" 
+                      activeClassName="selected">
+                      Today
+                    </NavLink></li>
+                    <li><NavLink 
+                      to="/guides" 
+                      activeClassName="selected">
+                      Guides
+                    </NavLink></li>
+                    <li><NavLink 
+                      to="/journals" 
+                      activeClassName="selected">
+                      Journals
+                    </NavLink></li>
+                    <li><NavLink 
+                      to="/medals" 
+                      activeClassName="selected">
+                      Medals
+                    </NavLink></li>
+                    <li><NavLink 
+                      to="/profile" 
+                      activeClassName="selected">
+                      Profile
+                    </NavLink></li>
+                    <li><NavLink 
+                      to="/about" 
+                      activeClassName="selected">
+                      About Us
+                    </NavLink></li>
+                  </ul>
+                </nav>
+            </div>
             <Switch>
-             <Route path="/" component={Home} exact/>
-             <Route path="/about" component={About}/>
-             <Route path="/journals" component={Journals}/>
-             <Route path="/guides" component={Guides}/>
-             <Route path="/medals" component={Medals}/>
-             <Route path="/profile" component={Profile}/>
-            <Route component={Error}/>
-           </Switch>
-        </div> 
-      </BrowserRouter>
+              <Route path="/guides">
+                <Guides />
+              </Route>
+              <Route path="/journals">
+                <Journals />
+              </Route>
+              <Route path="/medals">
+                <Medals />
+              </Route>
+              <Route path="/profile">
+                <Profile />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/">
+                <Today />
+              </Route>
+            </Switch>
+          </Router>
+        </CookiesProvider>
+      </div>
     );
   }
 }
- 
 export default App;

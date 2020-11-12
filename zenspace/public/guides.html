@@ -6,6 +6,7 @@
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     </head>
 
     <body>
@@ -22,15 +23,20 @@
             </ul>
         </div>
         <div id="root">
-            <br>
-            <!--The most important feature, guides are contained in large dropdown categories, with each guide having their own dropdown for their details.-->
-            <!--These should populate according to JSON files on the server, so here are pure HTML examples.-->
+            <!--
+
+
+            The most important feature, guides are contained in large dropdown categories, with each guide having their own dropdown for their details.
+            These should populate according to JSON files on the server, so here are pure HTML examples.
+
+
             <form class="panelwide" id="search" action="/search.php">
                 <input type="text" id="searchtext" name="searchtext" size="30" placeholder="Search Guides, Tasks, Journals, etc." required>
                 <input type="submit" value="Search">
             </form>
             <br>
             <div class="panel" id="guides">
+                
                 <h2>Guides</h2>
                 <ul class="categorylist">
                     <li class="category" id="meditation">
@@ -138,6 +144,8 @@
                 </ul>
             </div>
             <br>
+            
+            -->
         </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>

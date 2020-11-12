@@ -5,8 +5,10 @@ import {
   Route,
   NavLink
 } from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { CookiesProvider, useCookies } from "react-cookie";
 import Login from './components/Login';
+import FormData from './components/Data';
 import Today from './components/Today';
 import Guides from './components/Guides';
 import Journals from './components/Journals';
@@ -44,6 +46,11 @@ function App() {
                       Guides
                     </NavLink></li>
                     <li><NavLink 
+                      to="/Data" 
+                      activeClassName="selected">
+                      Data
+                    </NavLink></li>
+                    <li><NavLink 
                       to="/journals" 
                       activeClassName="selected">
                       Journals
@@ -78,6 +85,9 @@ function App() {
               </Route>
               <Route path="/profile">
                 <Profile />
+              </Route>
+              <Route path="/data">
+                <FormData />
               </Route>
               <Route path="/about">
                 <About />

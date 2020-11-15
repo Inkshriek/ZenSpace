@@ -1,9 +1,5 @@
 <?php
     include("extern/database.php");
-    
-    if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-        header("Location: index.php");
-    }
 ?>
 
 <!DOCTYPE html>
@@ -17,19 +13,25 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
 
+    <?php
+		if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]) {
+	?>
+
     <body>
+
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
             <ul id="nav">
                 <li>Today</li>
-                <li><a href="guides.html">Guides</a></li>
-                <li><a href="journals.html">Journals</a></li>
-                <li><a href="medals.html">Medals</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="guides.php">Guides</a></li>
+                <li><a href="journals.php">Journals</a></li>
+                <li><a href="medals.php">Medals</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
+
         <div id="root">
             <br>
             <!--Each feature is displayed in panels, with two columns for desktop and one column for mobile-->
@@ -81,10 +83,25 @@
             </div>
             <br>
         </div>
+
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
             <p>ZenSpace is Powered by React.</p>
         </div>
+
     </body>
+
+    <?php
+        }
+        else {
+    ?>
+
+    <body>
+        
+    </body>
+
+    <?php
+        }
+    ?>
 
 </html>

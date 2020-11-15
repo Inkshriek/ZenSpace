@@ -22,12 +22,12 @@
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
             <ul id="nav">
-                <li><a href="index.html">Today</a></li>
-                <li><a href="guides.html">Guides</a></li>
-                <li><a href="journals.html">Journals</a></li>
+                <li><a href="index.php">Today</a></li>
+                <li><a href="guides.php">Guides</a></li>
+                <li><a href="journals.php">Journals</a></li>
                 <li>Medals</li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
         <div id="root">

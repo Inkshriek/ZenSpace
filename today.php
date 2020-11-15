@@ -1,11 +1,16 @@
+<?php
+	include("extern/database.php");
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <title>ZenSpace - Today</title>
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>

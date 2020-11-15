@@ -1,9 +1,9 @@
 <?php
     include("extern/database.php");
     
-    if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-        header("Location: index.php");
-    }
+    // if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
+    //     header("Location: index.php");
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -21,13 +21,14 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
+            <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
             <ul id="nav">
-                <li><a href="index.html">Today</a></li>
-                <li><a href="guides.html">Guides</a></li>
+                <li><a href="index.php">Today</a></li>
+                <li><a href="guides.php">Guides</a></li>
                 <li>Journals</li>
-                <li><a href="medals.html">Medals</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="medals.php">Medals</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
         <div id="root">

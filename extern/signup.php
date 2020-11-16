@@ -6,10 +6,10 @@
 	}
 
 	$notif = 0;
-	if (isset($_POST["user"]) && isset($_POST["pass"]) && isset($_POST["email"])) {
+	if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["email"])) {
+		$user = $_POST["username"];
+		$pass = $_POST["password"];
 		$email = $_POST["email"];
-		$user = $_POST["user"];
-		$pass = $_POST["pass"];
 		if (filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($user) >= 6 && strlen($pass) >= 6) {
 			$sql = "SELECT username FROM Users WHERE username='". $user ."'";
 			$result = mysqli_query($connection, $sql);

@@ -14,7 +14,7 @@
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="main.css" >
+        <link rel="stylesheet" type="text/css" href="css/main.css" >
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="guides.css" >
     </head>

@@ -6,9 +6,9 @@
 	}
 
 	$notif = 0;
-	if (isset($_POST["user"]) && isset($_POST["pass"])) {
-		$user = $_POST["user"];
-		$pass = $_POST["pass"];
+	if (isset($_POST["username"]) && isset($_POST["password"])) {
+		$user = $_POST["username"];
+		$pass = $_POST["password"];
 		$sql = "SELECT userID, username, password FROM Users WHERE username='". $user ."'";
 		$result = mysqli_query($connection, $sql);
 

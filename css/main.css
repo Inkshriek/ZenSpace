@@ -1,0 +1,37 @@
+#nav {
+    padding:20px;
+    top: -85px;
+    left: 0px;
+    width: 207px;
+    height: relative;
+    background: #D1E8E2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative; 
+}
+
+li {
+    margin:10px;
+}
+
+a {
+text-align: left;
+font: normal normal medium 20px/27px Avenir Next;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+padding:3px;
+}
+
+#Selected{
+background: #2B7A78 0% 0% no-repeat padding-box;
+width: 65px;
+border-radius: 12px 0px 0px 12px;
+opacity: 1;
+color:White;
+font: normal normal medium 20px/27px Avenir Next;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+padding:3px;
+display:inline;
+}

@@ -14,20 +14,23 @@
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="main.css" >
     </head>
 
     <body>
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
+            <div class="wrapper">
+            <div class="sidebar">
             <ul id="nav">
+            <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
+            <br><br>
                 <li><a href="index.php">Today</a></li>
                 <li><a href="guides.php">Guides</a></li>
                 <li><a href="journals.php">Journals</a></li>
                 <li><a href="medals.php">Medals</a></li>
-                <li>Profile</li>
+                <li id = "Selected">Profile</li>
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
@@ -50,6 +53,7 @@
             </form>
             <br>
         </div>
+    </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
             <p>ZenSpace is Powered by React.</p>

@@ -1,0 +1,14 @@
+input#searchtext {
+    top: 48px;
+left: 327px;
+width: 878px;
+height: 64px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 32px;
+opacity: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+  }

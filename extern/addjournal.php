@@ -12,11 +12,16 @@
         $journal = new \stdClass();
         $journal->title = $title;
         $journal->text = $text;
+        $journal->date = date("Y-m-d");
         //$journal->mood = $mood;
 
         $json = json_encode($journal);
         if (json_decode($json) != null) {
-            $file = fopen("../journals/journal" . $_SESSION["id"] . "+" . date("Y-m-d") . ".json","w+");
+            $dir = "../journals/" . $_SESSION["id"];
+            if(!is_dir($dir)){
+                mkdir($dir, 0755);
+            }
+            $file = fopen($dir . "/journal+" . date("Y-m-d") . ".json","w+");
             fwrite($file, $json);
             fclose($file);
         }

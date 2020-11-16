@@ -70,25 +70,28 @@
                 <button onclick="toggleCheckIn()">Add New Journal</button>
                 <ul class="journallist">
                     <!--Journals will populate this list when read from the server.-->
-                    
-                    <li>
-                        <div class="journalentry">
-                            <h3>Sample Journal</h3>
-                            <div>Date: 10/17/2020</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis tellus ac nisl dictum suscipit id vel tellus. Mauris vestibulum euismod massa ac sagittis. Donec sit amet orci a mauris elementum aliquam. Praesent fringilla hendrerit aliquet. Proin tempor laoreet ligula at aliquam. Curabitur volutpat elit nec ex dictum finibus quis et erat. Sed eu molestie urna.</p>
-                            <div class="mood">Mood Rating: 6/10</div>
-                            <a href="javascript:alert('This'll let you edit the journal in its entirety.');">Edit Journal</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="journalentry">
-                            <h3>Sample Journal</h3>
-                            <div>Date: 10/21/2020</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis tellus ac nisl dictum suscipit id vel tellus. Mauris vestibulum euismod massa ac sagittis. Donec sit amet orci a mauris elementum aliquam. Praesent fringilla hendrerit aliquet. Proin tempor laoreet ligula at aliquam. Curabitur volutpat elit nec ex dictum finibus quis et erat. Sed eu molestie urna.</p>
-                            <div class="mood">Mood Rating: 9/10</div>
-                            <a href="javascript:alert('This'll let you edit the journal in its entirety.');">Edit Journal</a>
-                        </div>
-                    </li>
+                    <?php
+                        $path = "journals/" . $_SESSION["id"] . "/";
+
+                        if ($handle = opendir($path)) {
+                            while (false !== ($file = readdir($handle))) {
+                                if ('.' === $file) continue;
+                                if ('..' === $file) continue;
+                        
+                                $json = file_get_contents($path . $file);
+                                $array = json_decode($json, true);
+                                echo "
+                                <li class='journalentry'>
+                                    <h3>" . $array['title'] . "</h3>
+                                    <p>" . $array['text'] . "</p>
+                                    <div class='mood'>Mood Rating: 6/10</div>
+                                    <a href='javascript:alert('This will let you edit the journal in its entirety.');'>Edit Journal</a>
+                                </li>
+                                ";
+                            }
+                            closedir($handle);
+                        }
+                    ?>
                 </ul>
 
             </div>

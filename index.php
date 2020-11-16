@@ -10,13 +10,14 @@
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
     <?php
 		if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]) {
 	?>
 
+    <!--This displays when you're logged in. Essentially the important stuff.-->
     <body>
 
         <div id="header">
@@ -53,7 +54,7 @@
                 <h2>Good Morning, User!</h2>
                 <div id="checkin">
                     Would you like to talk about your day today?
-                    <a href="javascript:alert('This would make a quick prompt for a new journal for today.');">Check-In</a>
+                    <a href="journals.php?checkin=true">Check-In</a>
                 </div>
             </div>
             <br>
@@ -92,10 +93,10 @@
     </body>
 
     <?php
-        }
-        else {
+        } else {
     ?>
 
+    <!--This displays when you're not logged in.-->
     <body>
         
     </body>

@@ -23,8 +23,12 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
+            <div class="wrapper">
+            <div class="sidebar">
             <ul id="nav">
-                <li>Today</li>
+              <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
+              <br><br>
+                <li id = "Selected">Today</li>
                 <li><a href="guides.php">Guides</a></li>
                 <li><a href="journals.php">Journals</a></li>
                 <li><a href="medals.php">Medals</a></li>
@@ -89,6 +93,16 @@
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
             <p>ZenSpace is Powered by React.</p>
         </div>
+      </div>
+      <br />
+    </div>
+    </div>
+    <div id="footer">
+      <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
+      <p>ZenSpace is Powered by React.</p>
+    </div>
+  </div>
+</div>
 
     </body>
 

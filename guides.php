@@ -14,22 +14,26 @@
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css" >
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="guides.css" >
     </head>
 
     <body>
-        <div id="header">
-            <!--This should be shown at the top for mobile and at the side for desktop-->
-            <h1>ZenSpace</h1>
+    <div id="header">
+          <h1>ZenSpace</h1>
+          <div class="wrapper">
+            <div class="sidebar">
+              <ul id="nav">
             <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
-            <ul id="nav">
-                <li><a href="index.php">Today</a></li>
-                <li>Guides</li>
-                <li><a href="journals.php">Journals</a></li>
-                <li><a href="medals.php">Medals</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="about.php">About Us</a></li>
-            </ul>
+            <br><br>
+            <li><a href="index.php">Today</a></li>
+            <li id = "Selected">Guides</li>
+            <li><a href="journals.php">Journals</a></li>
+            <li><a href="medals.php">Medals</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="about.php">About Us</a></li>
+          </ul>
         </div>
         <div id="main">
           <br />
@@ -174,12 +178,12 @@
           </div>
           <br />
         </div>
+                    </div>
         <div id="footer">
           <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
           <p>ZenSpace is Powered by React.</p>
         </div>
       </div>
-    </div>
     </body>
 
 </html>

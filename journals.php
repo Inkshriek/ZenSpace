@@ -67,11 +67,21 @@
             <br>
             <div class="panelwide" id="journals">
                 <h2>Journals</h2>
-                <button onclick="toggleCheckIn()">Add New Journal</button>
+                <?php
+                    $filecheck = "journals/" . $_SESSION["id"] . "/journal+" . date("Y-m-d");
+                    if (file_exists($filecheck)) {
+                        echo "<button onclick='toggleCheckIn()'>Edit Journal From Today</button>";
+                    }
+                    else {
+                        echo "<button onclick='toggleCheckIn()'>Add Journal For Today</button>";
+                    }
+                ?>
                 <ul class="journallist">
                     <!--Journals will populate this list when read from the server.-->
                     <?php
                         $path = "journals/" . $_SESSION["id"] . "/";
+                        $print = [];
+                        $printcount = 0;
 
                         if ($handle = opendir($path)) {
                             while (false !== ($file = readdir($handle))) {
@@ -80,16 +90,22 @@
                         
                                 $json = file_get_contents($path . $file);
                                 $array = json_decode($json, true);
-                                echo "
-                                <li class='journalentry'>
-                                    <h3>" . $array['title'] . "</h3>
-                                    <p>" . $array['text'] . "</p>
-                                    <div class='mood'>Mood Rating: 6/10</div>
-                                    <a href='javascript:alert('This will let you edit the journal in its entirety.');'>Edit Journal</a>
-                                </li>
-                                ";
+                                
+                                array_push($print, "
+                                    <li class='journalentry'>
+                                        <h3>" . $array['title'] . "</h3>
+                                        <div>" . $array['date'] . "</div>
+                                        <p>" . $array['text'] . "</p>
+                                        <div class='mood'>Mood Rating: 6/10</div>
+                                        <a href='javascript:alert('This will let you edit the journal in its entirety.');'>Edit Journal</a>
+                                    </li>
+                                ");
+                                $printcount += 1;
                             }
                             closedir($handle);
+                        }
+                        for ($i = $printcount - 1; $i >= 0; $i -= 1) {
+                            echo $print[$i];
                         }
                     ?>
                 </ul>

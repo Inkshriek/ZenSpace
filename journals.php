@@ -52,6 +52,8 @@
                 <br>
                 <textarea style="resize:none" rows="5" cols="60" id="checkintext" name="checkintext" placeholder="How are you feeling today?" required></textarea>
                 <br>
+                <input type="date" name="checkindate" placeholder="Select Journal Date" required>
+                <br>
                 <input type="submit" value="Finish">
                 <button onclick="toggleCheckIn()">Cancel</button>
             </form>
@@ -67,15 +69,7 @@
             <br>
             <div class="panelwide" id="journals">
                 <h2>Journals</h2>
-                <?php
-                    $filecheck = "journals/" . $_SESSION["id"] . "/journal+" . date("Y-m-d");
-                    if (file_exists($filecheck)) {
-                        echo "<button onclick='toggleCheckIn()'>Edit Journal From Today</button>";
-                    }
-                    else {
-                        echo "<button onclick='toggleCheckIn()'>Add Journal For Today</button>";
-                    }
-                ?>
+                <button onclick='toggleCheckIn()'>Add Journal</button>
                 <ul class="journallist">
                     <!--Journals will populate this list when read from the server.-->
                     <?php

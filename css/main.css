@@ -52,3 +52,20 @@ opacity: 1;
     width: 100%;
     margin-left: 50px;
   }
+
+input [type=submit]{
+  width: 555px;
+  height: 64px;
+  background-color: #D1E8E2;
+  border-radius:12px;
+  opacity:1;
+  color:#292929;
+}
+
+input[type=text], [type=password]{
+  width: 555px;
+  height: 64px;
+  background-color: #FFFFFF;
+  border-radius:12px;
+  opacity:1;
+}

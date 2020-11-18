@@ -36,16 +36,17 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <div class="sidebar">
-            <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
-            <ul id="nav">
-                <li id = "Selected">Today</li>
-                <li><a href="guides.php">Guides</a></li>
-                <li><a href="journals.php">Journals</a></li>
-                <li><a href="medals.php">Medals</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="about.php">About Us</a></li>
-            </ul>
-        </div>
+                <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
+                <ul id="nav">
+                    <li id = "Selected">Today</li>
+                    <li><a href="guides.php">Guides</a></li>
+                    <li><a href="journals.php">Journals</a></li>
+                    <li><a href="medals.php">Medals</a></li>
+                    <li><a href="profile.php">Profile</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                </ul>
+                <a href="logout.php">Logout</a>
+            </div>
         </div>
         
         <div id = "main">

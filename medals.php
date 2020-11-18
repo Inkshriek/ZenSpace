@@ -23,16 +23,17 @@
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <div class="sidebar">
                 <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
-            <ul id="nav">
-                <li><a href="index.php">Today</a></li>
-                <li><a href="guides.php">Guides</a></li>
-                <li><a href="journals.php">Journals</a></li>
-                <li id = "Selected">Medals</li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="about.php">About Us</a></li>
-            </ul>
+                <ul id="nav">
+                    <li><a href="index.php">Today</a></li>
+                    <li><a href="guides.php">Guides</a></li>
+                    <li><a href="journals.php">Journals</a></li>
+                    <li id = "Selected">Medals</li>
+                    <li><a href="profile.php">Profile</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                </ul>
+                <a href="logout.php">Logout</a>
+            </div>
         </div>
-</div>
         <div id="main">
             <br>
             <!--Medals are achievements showing your progress! You can also make custom ones.-->

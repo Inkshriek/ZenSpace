@@ -36,6 +36,7 @@
             <li><a href="profile.php">Profile</a></li>
             <li><a href="about.php">About Us</a></li>
           </ul>
+          <a href="logout.php">Logout</a>
         </div>
     </div>
         <div id="main">

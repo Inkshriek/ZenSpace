@@ -1,37 +1,38 @@
 <?php
-	include("database.php");
+    include("database.php");
 
-	if (!isset($connection) || !$connection) {
-		die("Logging in cannot be done without a database connection, please try again later.");
-	}
+    if (!isset($connection) || !$connection) {
+        die("Logging in cannot be done without a database connection, please try again later.");
+    }
 
-	$notif = 0;
-	if (isset($_POST["username"]) && isset($_POST["password"])) {
-		$user = $_POST["username"];
-		$pass = $_POST["password"];
-		$sql = "SELECT userID, username, password FROM Users WHERE username='". $user ."'";
-		$result = mysqli_query($connection, $sql);
+    $notif = 0;
+    if (isset($_POST["username"]) && isset($_POST["password"])) {
+        $user = $_POST["username"];
+        $pass = $_POST["password"];
+        $sql = "SELECT userID, username, password, email FROM Users WHERE username='". $user ."'";
+        $result = mysqli_query($connection, $sql);
 
-		if ($result) {
-			if (mysqli_num_rows($result) > 0) {
-				$data = mysqli_fetch_assoc($result);
-				if (password_verify($pass, $data["password"])) {
-					$_SESSION["loggedin"] = true;
-					$_SESSION["user"] = $user;
-					$_SESSION["id"] = $data["userID"];
-				}
-				else {
-					$notif = 1;
-				}
-			}
-			else {
-				$notif = 2;
-			}
-		}
-		else {
-			$notif = 3;
-		}
-	}
+        if ($result) {
+            if (mysqli_num_rows($result) > 0) {
+                $data = mysqli_fetch_assoc($result);
+                if (password_verify($pass, $data["password"])) {
+                    $_SESSION["loggedin"] = true;
+                    $_SESSION["user"] = $user;
+                    $_SESSION["id"] = $data["userID"];
+                    $_SESSION["email"] = $data["email"];
+                }
+                else {
+                    $notif = 1;
+                }
+            }
+            else {
+                $notif = 2;
+            }
+        }
+        else {
+            $notif = 3;
+        }
+    }
 
-	header("Location: ../login.php?notif=" . $notif);
+    header("Location: ../login.php?notif=" . $notif);
 ?>

@@ -20,7 +20,15 @@
     </head>
 
     <body>
+    
+    <script>
+      function addTask(content) {
+        location.replace("extern/addtask.php?content=" + content + "");
+      }
+      
+    </script>
     <div id="header">
+
           <h1>ZenSpace</h1>
           <div class="wrapper">
             <div class="sidebar">
@@ -78,7 +86,7 @@
                       <li>Bring yourself to the present and thank yourself for doing this to be happier</li>
                     </ol>
                     <br />
-                    <a href="javascript:alert('Test');">Add To Tasks!</a>
+                    <button onclick="addTask('Perform Imagery Meditation')">Add To Tasks!</button>
                 </ul>
               </li>
               <li className="category" id="meditation">

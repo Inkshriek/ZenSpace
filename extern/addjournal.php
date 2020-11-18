@@ -5,13 +5,11 @@
 		die("Journals can't be added without a database connection. Unfortunately. Please try again later.");
 	}
 
-    if (isset($_POST["checkintitle"]) && isset($_POST["checkintext"]) && isset($_POST["checkindate"])) {
-        $title = $_POST["checkintitle"];
+    if (isset($_POST["checkintext"]) && isset($_POST["checkindate"])) {
         $text = $_POST["checkintext"];
         $date = $_POST["checkindate"];
         //$mood = $_POST["checkinmood"];
         $journal = new \stdClass();
-        $journal->title = $title;
         $journal->text = $text;
         $journal->date = $date;
         //$journal->mood = $mood;
@@ -26,11 +24,10 @@
             fwrite($file, $json);
             fclose($file);
         }
-        echo "Your journal has been added/updated for " . $date . "! <br>";
-        echo $json;
-        echo "<br> <a href='../journals.php'>Return to Journals</a>";
     }
     else {
         echo "Why are you here";
     }
+
+    header("Location: ../journals.php");
 ?>

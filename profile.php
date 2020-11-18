@@ -34,22 +34,30 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
+
         <div id="root">
             <br>
             <!--Profile shows basic account information from the server as well as some settings.-->
-            <form class="panelwide" id="profile" action="/profilesave.php">
+            <form class="panelwide" id="profile" action="extern/profilesave.php" method="post">
                 <h2>Profile Details</h2>
-                <label for="username">Username: </label><input type="text" id="username" name="username" value="User" required><br>
-                <label for="email">Email: </label><input type="text" id="email" name="email" value="something@gmail.com" required><br>
-                <label for="location">Location: </label><input type="text" id="location" name="location" value="United States"><br>
-                <input type="checkbox" id="privatetoggle" name="privatetoggle"><label for="privatetoggle"> Make Private</label><br>
-                <a href="javascript:alert('This would bring up another window for changing the password.');">Change Password</a><br>
-                <br>
-                <input type="checkbox" id="soundtoggle" name="soundtoggle"><label for="soundtoggle"> Sound Effects</label><br>
-                <input type="checkbox" id="tipstoggle" name="tipstoggle"><label for="tipstoggle"> Motivational Tips</label><br>
-                <input type="checkbox" id="notifstoggle" name="notifstoggle"><label for="notifstoggle"> Notifications</label><br>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" value="<?php echo $_SESSION['user']; ?>" required><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" value="<?php echo $_SESSION['email']; ?>" required><br>
                 <br>
                 <input type="submit" value="Save">
+                <?php
+                    if (isset($_GET['notif'])) {
+                        switch ($_GET['notif']) {
+                            case 1:
+                                echo "Your profile details were updated!";
+                            break;
+                            case 2:
+                                echo "Your username needs to be at least 6 characters long and your email needs to be a valid format.";
+                            break;
+                        }
+                    }
+                ?>
             </form>
             <br>
         </div>

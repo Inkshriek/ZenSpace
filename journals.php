@@ -20,9 +20,11 @@
         <script>
             
             function toggleCheckIn() {
+
                 var x = document.getElementById("checkinoverlay");
                 if (x.style.display === "none") {
                     x.style.display = "block";
+                    scroll(0,0);
                 } else {
                     x.style.display = "none";
                 }
@@ -47,13 +49,22 @@
         </div>
         <div id="root">
 
-            <form id="checkinoverlay" action="extern/addjournal.php" method="post" style="display: none;">
+            <form id="checkinoverlay" action="extern/addjournal.php" method="post" style="display: 
+            <?php
+                if (isset($_GET["checkin"]) && $_GET["checkin"] == true) {
+                    echo "block";
+                }
+                else {
+                    echo "none";
+                }
+                
+            ?>;">
                 <h2>Check-In</h2> 
-                <input type="text" id="checkintitle" name="checkintitle" placeholder="Journal Title" required>
-                <br>
                 <textarea style="resize:none" rows="5" cols="60" id="checkintext" name="checkintext" placeholder="How are you feeling today?" required></textarea>
                 <br>
-                <input type="date" name="checkindate" placeholder="Select Journal Date" required>
+                <input type="date" id="checkindate" name="checkindate" placeholder="Select Journal Date" required>
+                <br>
+                <div>If a journal already exists at the specified date, it will be updated.</div>
                 <br>
                 <input type="submit" value="Finish">
                 <button onclick="toggleCheckIn()">Cancel</button>
@@ -70,7 +81,7 @@
             <br>
             <div class="panelwide" id="journals">
                 <h2>Journals</h2>
-                <button onclick='toggleCheckIn()'>Add Journal</button>
+                <button onclick='toggleCheckIn()'>Add/Edit Journal</button>
                 <ul class="journallist">
                     <!--Journals will populate this list when read from the server.-->
                     <?php
@@ -78,6 +89,10 @@
                         $print = [];
                         $printcount = 0;
 
+                        if(!is_dir($path)){
+                            //Directory does not exist, so lets create it.
+                            mkdir($path, 0755);
+                        }
                         if ($handle = opendir($path)) {
                             while (false !== ($file = readdir($handle))) {
                                 if ('.' === $file) continue;
@@ -88,11 +103,9 @@
                                 
                                 array_push($print, "
                                     <li class='journalentry'>
-                                        <h3>" . $array['title'] . "</h3>
-                                        <div>" . $array['date'] . "</div>
+                                        <h3>" . $array['date'] . "</h3>
                                         <p>" . $array['text'] . "</p>
-                                        <div class='mood'>Mood Rating: 6/10</div>
-                                        <a href='javascript:alert('This will let you edit the journal in its entirety.');'>Edit Journal</a>
+                                        <a href='extern/deletejournal.php?date=" .$array['date']. "');'>Delete Journal</a>
                                     </li>
                                 ");
                                 $printcount += 1;

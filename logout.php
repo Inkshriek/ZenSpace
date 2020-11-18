@@ -4,6 +4,7 @@
 	$_SESSION["loggedin"] = false;
 	$_SESSION["user"] = "";
 	$_SESSION["id"] = 0;
+	$_SESSION["email"] = "";
 
-	goback();
+	header("Location: index.php");
 ?>

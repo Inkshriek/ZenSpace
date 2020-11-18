@@ -1,6 +1,7 @@
-body {
-    background: #F5F6FA 0% 0% no-repeat padding-box;
-opacity: 1;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+h2, li {
+ font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -128,6 +129,12 @@ opacity: 1;
   -webkit-transition: .4s;
   transition: .4s;
 }
+  .wrapper .sidebar ul li{
+    padding: 10px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
 
 input:checked + .slider {
   background-color: #2196F3;
@@ -151,3 +158,24 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+  .wrapper #main{
+    width: 100%;
+    margin-left: 50px;
+  }
+
+input [type=submit]{
+  width: 555px;
+  height: 64px;
+  background-color: #D1E8E2;
+  border-radius:12px;
+  opacity:1;
+  color:#292929;
+}
+
+input[type=text], [type=password]{
+  width: 555px;
+  height: 64px;
+  background-color: #FFFFFF;
+  border-radius:12px;
+  opacity:1;
+}

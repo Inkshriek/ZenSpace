@@ -40,9 +40,7 @@
         </div>
     </div>
         <div id="main">
-          <br />
-          {/*The most important feature, guides are contained in large dropdown categories, with each guide having their own dropdown for their details.*/}
-          {/*These should populate according to JSON files on the server, so here are pure HTML examples.*/}
+          <br>
           <form name="panelwide" id="search" action="/search.php">
             <input type="text" id="searchtext" name="searchtext" size={30} placeholder="Search Guides, Tasks, Journals, etc." required />
             <input type="submit" defaultValue="Search" />

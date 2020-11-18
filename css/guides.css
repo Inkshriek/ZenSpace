@@ -1,12 +1,8 @@
 input#searchtext {
-    top: 48px;
-left: 57px;
-width: 278px;
-height: 34px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 32px;
-opacity: 1;
-}
+    width: 278px;
+    height: 18px;
+    border-radius: 32px;
+    }
 
 hr {
     height: 1px;

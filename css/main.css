@@ -39,11 +39,6 @@ opacity: 1;
   text-align:center;
 }
 
-#main {
-    display:grid;
-  grid-column-start: 2;
-}
-
 .sidebar {
     background: #D1E8E2;
     margin: 0;
@@ -90,6 +85,10 @@ opacity: 1;
 
 #main {
     padding-left:250px;
+    display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+    
 }
 
 #footer {

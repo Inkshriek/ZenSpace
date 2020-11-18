@@ -47,14 +47,13 @@
                 </ul>
                 <a href="logout.php">Logout</a>
             </div>
+
         </div>
-        
         <div id = "main">
             <div id="focusmode" style="display: none;">
                 <div id="min"></div>:<div id="sec"></div>
                 <button onclick="startTimer()">Start Pomodoro</button>
             </div>
-
             <br>
             <!--Each feature is displayed in panels, with two columns for desktop and one column for mobile-->
             <form class="panelwide" id="search" action="/search.php">
@@ -69,8 +68,6 @@
                     <a href="journals.php?checkin=true">Check-In</a>
                     <img src = "img/user.jpg" height = "200" width = "350" alt ="Picture of many people">
                 </div>
-            </div>
-            <br>
             <div class="panel" id="tasks">
                 <h2>Today's Tasks</h2>
                 <ul id="taskslist">
@@ -98,8 +95,10 @@
                     <input type="text" id="content" name="content" placeholder="Task Name" required>
                     <input type="submit" value="Add New Task">
                 </form>
-            </div>
-            <div class="panel" id="dailyhelp">
+            <br>
+                    </div>
+                    </div>
+                <div class="panel" id="dailyhelp">
                 <h2>Tip of the Day</h2>
                     <?php
                         $tip = [
@@ -113,11 +112,14 @@
                         $rand = rand(0,5);
                         echo "<div id='dailyhelptip'>".$tip[$rand]."</div>";
                     ?>
+                
+            <div class = "grid2">
                 <div id="dailyhelpimage">
                 <img src="img/quote1.jpg" height = "200" width = "200" alt=" Tip Image">
                 </div>
                 <br>
-            </div>
+                    </div>
+                    </div>
                     </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>

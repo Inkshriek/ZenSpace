@@ -17,7 +17,8 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <div class="wrapper">
+</div>
+            <div id="grid">
             <div class="sidebar">
             <ul id="nav">
                 <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>

@@ -21,7 +21,8 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <div class="wrapper">
+    </div>
+            <div id ="grid">
             <div class="sidebar">
             <ul id="nav">
             <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
@@ -34,7 +35,7 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
-        <div id="root">
+        <div id="main">
             <br>
             <!--Profile shows basic account information from the server as well as some settings.-->
             <form class="panelwide" id="profile" action="/profilesave.php">

@@ -33,7 +33,8 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <div class="wrapper">
+        </div>
+            <div id = "grid">
             <div class="sidebar">
             <ul id="nav">
                 <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
@@ -45,8 +46,7 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
-        <div id="root">
-
+        <div id="main">
             <form id="checkinoverlay" action="extern/addjournal.php" method="post" style="display: none;">
                 <h2>Check-In</h2> 
                 <input type="text" id="checkintitle" name="checkintitle" placeholder="Journal Title" required>

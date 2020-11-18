@@ -8,7 +8,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <title>ZenSpace - Today</title>
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
@@ -16,16 +15,17 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/main.css" >
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="guides.css" >
+        <link rel="stylesheet" type="text/css" href="css/guides.css" >
     </head>
 
     <body>
     <div id="header">
           <h1>ZenSpace</h1>
-          <div class="wrapper">
+    </div>
+    <div id = "grid">
             <div class="sidebar">
               <ul id="nav">
-            <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
+            <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"></img>
             <br><br>
             <li><a href="index.php">Today</a></li>
             <li id = "Selected">Guides</li>
@@ -80,6 +80,7 @@
                     <br />
                     <a href="javascript:alert('Test');">Add To Tasks!</a>
                 </ul>
+                <hr>
               </li>
               <li className="category" id="meditation">
                 <h3>Relaxation</h3>
@@ -114,6 +115,7 @@
                     <br />
                     <a href="javascript:alert('Test');">Add To Tasks!</a>
                 </ul>
+                <hr>
               </li>
               <li className="category" id="sleep">
                 <h3>Sleep</h3>
@@ -147,6 +149,7 @@
                     <br />
                     <a href="javascript:alert('Test');">Add To Tasks!</a>
                 </ul>
+                <hr>
               </li>
               <li className="category" id="classtips">
                 <h3>Class Tips</h3>

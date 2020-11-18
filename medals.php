@@ -15,13 +15,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/medals.css">
     </head>
 
     <body>
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <div class="wrapper">
+    </div>
+            <div id="grid">
             <div class="sidebar">
             <ul id="nav">
                 <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
@@ -34,7 +36,7 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
-        <div id="root">
+        <div id="main">
             <br>
             <!--Medals are achievements showing your progress! You can also make custom ones.-->
             <!--They're displayed as pretty pictures that start grayed with a progress measurement, then gain color when accomplished.-->
@@ -88,12 +90,9 @@
                     </li>
                 </ul>
                 <a href="javascript:alert('This'll give you a prompt for making your own medal.');">Add Custom Medal</a>
-
-
             </div>
             <br>
         </div>
-    </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
             <p>ZenSpace is Powered by React.</p>

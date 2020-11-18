@@ -16,9 +16,6 @@
     <body>
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
-            <h1>ZenSpace</h1>
-</div>
-            <div id="grid">
             <div class="sidebar">
             <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
             <ul id="nav">
@@ -29,6 +26,7 @@
                 <li><a href="profile.php">Profile</a></li>
                 <li id = "Selected"> About Us</li>
 </ul>    
+</div>
 </div>
         <div id="main">
             <br>

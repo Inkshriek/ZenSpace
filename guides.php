@@ -26,10 +26,6 @@
       
     </script>
     <div id="header">
-
-          <h1>ZenSpace</h1>
-    </div>
-    <div id = "grid">
             <div class="sidebar">
                 <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
               <ul id="nav">
@@ -41,6 +37,7 @@
             <li><a href="about.php">About Us</a></li>
           </ul>
         </div>
+    </div>
         <div id="main">
           <br />
           {/*The most important feature, guides are contained in large dropdown categories, with each guide having their own dropdown for their details.*/}
@@ -182,7 +179,6 @@
               </li>
           </div>
           <br />
-        </div>
     </div>
         <div id="footer">
           <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>

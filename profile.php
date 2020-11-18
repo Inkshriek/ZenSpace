@@ -1,9 +1,9 @@
 <?php
     include("extern/database.php");
     
-    // if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-    //     header("Location: index.php");
-    // }
+    if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
+        header("Location: index.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -15,15 +15,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
-        <link rel="stylesheet" type="text/css" href="css/profile.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
     <body>
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
-            <h1>ZenSpace</h1>
-    </div>
-            <div id ="grid">
             <div class="sidebar">
                 <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
             <ul id="nav">
@@ -35,8 +32,9 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
+    </div>
 
-        <div id="root">
+        <div id="main">
             <br>
             <!--Profile shows basic account information from the server as well as some settings.-->
             <form class="panelwide" id="profile" action="extern/profilesave.php" method="post">

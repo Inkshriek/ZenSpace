@@ -11,7 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/navigation.css">
     </head>
 
     <?php
@@ -36,7 +35,6 @@
 
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
-            <h1>ZenSpace</h1>
             <div class="sidebar">
             <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
             <ul id="nav">
@@ -48,9 +46,9 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
-
-        <div id="main">
-
+        </div>
+        
+        <div id = "main">
             <div id="focusmode" style="display: none;">
                 <div id="min"></div>:<div id="sec"></div>
                 <button onclick="startTimer()">Start Pomodoro</button>
@@ -119,8 +117,7 @@
                 </div>
                 <br>
             </div>
-        </div>
-
+                    </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
             <p>ZenSpace is Powered by React.</p>
@@ -132,11 +129,11 @@
     ?>
 
     <!--This displays when you're not logged in.-->
-    <body>
+            <body>
         <a href="login.php">You're not logged in! Log in here.</a>
         <br>
         <a href="signup.php">Or, sign up first if you lack an account.</a>
-    </body>
+        </body>
 
     <?php
         }

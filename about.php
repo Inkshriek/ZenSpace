@@ -25,8 +25,8 @@
                     <li><a href="medals.php">Medals</a></li>
                     <li><a href="profile.php">Profile</a></li>
                     <li id = "Selected"> About Us</li>
+                    <li><a href="logout.php">Logout</a></li>
                 </ul>    
-                <a href="logout.php">Logout</a>
             </div>
         </div>
         <div id="main">
@@ -72,7 +72,7 @@
 </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
-            <p>ZenSpace is Powered by React.</p>
+            <p>ZenSpace is Powered by PHP.</p>
         </div>
     </body>
 

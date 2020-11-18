@@ -1,5 +1,9 @@
-li {
- 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+</style>
+
+h2, li {
+ font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -42,7 +46,7 @@ opacity: 1;
     border-bottom: 1px solid #bdb8d7;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(255,255,255,0.05);
-  }    
+  }
 
   .wrapper .sidebar ul li a{
     display: block;

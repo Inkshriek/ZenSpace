@@ -37,21 +37,19 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <div id = "grid">
-                <div class="sidebar">
-                <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
-                <ul id="nav">
-                    <li id = "Selected">Today</li>
-                    <li><a href="guides.php">Guides</a></li>
-                    <li><a href="journals.php">Journals</a></li>
-                    <li><a href="medals.php">Medals</a></li>
-                    <li><a href="profile.php">Profile</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                </ul>
-            </div>
+            <div class="sidebar">
+            <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
+            <ul id="nav">
+                <li id = "Selected">Today</li>
+                <li><a href="guides.php">Guides</a></li>
+                <li><a href="journals.php">Journals</a></li>
+                <li><a href="medals.php">Medals</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="about.php">About Us</a></li>
+            </ul>
         </div>
 
-        <div id="root">
+        <div id="main">
 
             <div id="focusmode" style="display: none;">
                 <div id="min"></div>:<div id="sec"></div>
@@ -84,10 +82,10 @@
                             $row;
                             while($row = mysqli_fetch_array($result)) {
                                 if ($row['checked'] == 1) {
-                                    echo "<li><input type='checkbox' onclick='updateTask(" . $row['ID'] . ")' checked>" . $row['content'] . "<button onclick='deleteTask( " . $row['ID'] . " )'>Delete</button> </li>";
+                                    echo "<li class='task'><input type='checkbox' onclick='updateTask(" . $row['ID'] . ")' checked>" . $row['content'] . "<button onclick='deleteTask( " . $row['ID'] . " )'>Delete</button> </li>";
                                 }
                                 else {
-                                    echo "<li><input type='checkbox' onclick='updateTask(" . $row['ID'] . ")'>" . $row['content'] . "<button onclick='deleteTask( " . $row['ID'] . " )'>Delete</button> </li> ";
+                                    echo "<li class='task'><input type='checkbox' onclick='updateTask(" . $row['ID'] . ")'>" . $row['content'] . "<button onclick='deleteTask( " . $row['ID'] . " )'>Delete</button> </li> ";
                                 }
                                 
                             }   

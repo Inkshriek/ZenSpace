@@ -27,7 +27,7 @@ opacity: 1;
     text-decoration: none;
 }
 
-#grid {
+body {
   display: grid;
   grid-template-columns: 20vw auto auto auto;
   grid-gap: 30px;

@@ -10,11 +10,12 @@
 <html lang="en">
 
     <head>
-        <title>ZenSpace - Today</title>
+        <title>ZenSpace - Journals</title>
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/journal.css">
     </head>
     <body>
         <script>
@@ -35,10 +36,11 @@
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <div class="wrapper">
+        </div>
+            <div id = "grid">
             <div class="sidebar">
+                <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
             <ul id="nav">
-                <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
                 <li><a href="index.php">Today</a></li>
                 <li><a href="guides.php">Guides</a></li>
                 <li id = "Selected">Journals</li>
@@ -121,6 +123,7 @@
             <br>
         </div>
     </div>
+                    </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
             <p>ZenSpace is Powered by React.</p>

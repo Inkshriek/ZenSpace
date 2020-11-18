@@ -8,15 +8,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <title>ZenSpace - Today</title>
+        <title>ZenSpace - Guides</title>
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/main.css" >
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="guides.css" >
+        <link rel="stylesheet" type="text/css" href="css/guides.css" >
     </head>
 
     <body>
@@ -30,11 +28,11 @@
     <div id="header">
 
           <h1>ZenSpace</h1>
-          <div class="wrapper">
+    </div>
+    <div id = "grid">
             <div class="sidebar">
+                <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
               <ul id="nav">
-            <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
-            <br><br>
             <li><a href="index.php">Today</a></li>
             <li id = "Selected">Guides</li>
             <li><a href="journals.php">Journals</a></li>
@@ -47,15 +45,15 @@
           <br />
           {/*The most important feature, guides are contained in large dropdown categories, with each guide having their own dropdown for their details.*/}
           {/*These should populate according to JSON files on the server, so here are pure HTML examples.*/}
-          <form className="panelwide" id="search" action="/search.php">
+          <form name="panelwide" id="search" action="/search.php">
             <input type="text" id="searchtext" name="searchtext" size={30} placeholder="Search Guides, Tasks, Journals, etc." required />
             <input type="submit" defaultValue="Search" />
           </form>
           <br />
-          <div className="panel" id="guides">
+          <div id= "guides">
             <h2>Guides</h2>
-            <ul className="categorylist">
-              <li className="category" id="meditation">
+            <ul>
+              <li>
                 <h3>Meditation</h3>
                 <div>Meditation has been used throughout many centuries as a way to hone your focus and even reduce your stress. Learning to focus can reduce your perceived stress as well as enlighten your mood. One of the techniques to meditate is called, “Mindfulness meditation” and it relies on focusing on your breathing, mind, and body. It sounds like it’s a lot of work, but it can reduce stress and it has been found to be effective at reducing stress.
                   Mindful meditation instructions
@@ -66,13 +64,14 @@
                   Keep yourself in the present, do not think of the past or future
                   Begin to inhale and exhale and focus on that and clear your mind.
                   </div>
-                <ul className="guideslist">
                   <h3>Imagery meditation</h3>
                     <iframe title = "Video about imagery meditation" width="560" height="315" src="https://www.youtube.com/embed/inpok4MKVLM" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                     </iframe>
+                    </li>
+                    </ul>
                     <h3>Instructions</h3>
                     <ol>
                       <li>Shift your attention to your breathing</li>
@@ -93,13 +92,14 @@
                 <h3>Relaxation</h3>
                 <div>Relaxation is something we could all benefit from after a stressful day or even a long day at work. We want to guide you to a relaxed state and release your stress. One of the various ways to relax is to adjust your thinking and see things a bit different. If you have 3 quizzes within the same week you might become stressed with the thought of its impact on your grades. Instead of seeing it as 3 quizzes within the same week, think of it as 3 quizzes that you can take when you want to. Remember there are 24 hours in a day, try to dedicate 30 minutes to yourself if you are busy to relax. Here are a couple ways to relax
                   </div>
-                <ul className="guideslist">
+                <ul>
                   <h3>Relaxation techniques</h3>
                     <iframe title = "Video about relaxation techniques" width="560" height="315" src="https://www.youtube.com/embed/IQwqVe-BCek" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                       </iframe>
+                    </ul>
                       <h3>Instructions</h3>
                       <h4>Breathing</h4>
                     <ol>
@@ -122,12 +122,11 @@
                     <br />
                     <a href="javascript:alert('Test');">Add To Tasks!</a>
                 </ul>
-              </li>
-              <li className="category" id="sleep">
+                <hr>
                 <h3>Sleep</h3>
                 <div>Sleep, we all need it, but we can’t sleep sometimes because of various reasons. Some people have sleep apnea or even suffer from insomnia which makes it difficult to sleep. There are various techniques to help you sleep and even improve your sleep cycle. One of the most common ways people are able to sleep when they are struggling is to take melatonin pills. Melatonin is inside your body and helps control your body's sleep cycle. Taking a melatonin pill will make it easier to sleep depending on the dosage you require. Below are some ways to improve your sleep and videos that will aid you
                   </div>
-                <ul className="guideslist">
+                <ul>
                     <h3>Military sleep method</h3>
                     <iframe title = "Military method to aid with sleep" width="560" height="315" src="https://www.youtube.com/embed/FWGuy4oOQgQ" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -155,8 +154,7 @@
                     <br />
                     <a href="javascript:alert('Test');">Add To Tasks!</a>
                 </ul>
-              </li>
-              <li className="category" id="classtips">
+                <hr>
                 <h3>Class Tips</h3>
                 <div>The year 2020 has been one of the most hectic years for you I bet, switching to online classes within a few weeks has been stressful for millions of students being thrown into online classes. Zoom is being used around the globe to hold meetings for classes as a substitute for in person meetings. As a student you will need to know mainly the basics to use zoom, you can download the app on your computer or phone. Another thing to be ready for online classes is to organize a schedule for the dates you have things due. You could even put a sticky note on your refrigerator to remind yourself to get the work done. </div>
                 <ul className="guideslist">
@@ -182,15 +180,13 @@
                     <a href="javascript:alert('Test');">Add To Tasks!</a>
                 </ul>
               </li>
-            </ul>
           </div>
           <br />
         </div>
-                    </div>
+    </div>
         <div id="footer">
           <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
           <p>ZenSpace is Powered by React.</p>
-        </div>
       </div>
     </body>
 

@@ -6,26 +6,27 @@
     // }
 ?>
 
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>ZenSpace - Today</title>
+        <title>ZenSpace - Medals</title>
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/medals.css">
     </head>
 
     <body>
         <div id="header">
             <!--This should be shown at the top for mobile and at the side for desktop-->
             <h1>ZenSpace</h1>
-            <div class="wrapper">
+    </div>
+            <div id="grid">
             <div class="sidebar">
+                <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
             <ul id="nav">
-                <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
-                <br><br>
                 <li><a href="index.php">Today</a></li>
                 <li><a href="guides.php">Guides</a></li>
                 <li><a href="journals.php">Journals</a></li>
@@ -34,7 +35,7 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
-        <div id="root">
+        <div id="main">
             <br>
             <!--Medals are achievements showing your progress! You can also make custom ones.-->
             <!--They're displayed as pretty pictures that start grayed with a progress measurement, then gain color when accomplished.-->
@@ -71,25 +72,8 @@
                         <img src="img/checkinbadge.png" style="width:150px;height:150px;" alt="Medal Image">
                         <div>Completed!</div>
                     </li>
-                    <li class="medal">
-                        <h4>Heavy Sleeper</h4>
-                        <img src="" alt="Medal Image">
-                        <div>Progress: 62%</div>
-                    </li>
-                    <li class="medal">
-                        <h4>Pro Meditator</h4>
-                        <img src="" alt="Medal Image">
-                        <div>Progress: 45%</div>
-                    </li>
-                    <li class="medal">
-                        <h4>Class Whiz</h4>
-                        <img src="" alt="Medal Image">
-                        <div>Progress: 1%</div>
-                    </li>
                 </ul>
                 <a href="javascript:alert('This'll give you a prompt for making your own medal.');">Add Custom Medal</a>
-
-
             </div>
             <br>
         </div>

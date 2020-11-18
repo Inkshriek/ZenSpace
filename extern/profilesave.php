@@ -14,6 +14,8 @@
             $result = mysqli_query($connection, $sql);
             if ($result) {
                 $notif = 1;
+                $_SESSION["user"] = $_POST["username"];
+                $_SESSION["email"] = $_POST["email"];
             }
         }
         else {

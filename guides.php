@@ -35,12 +35,12 @@
             <li><a href="medals.php">Medals</a></li>
             <li><a href="profile.php">Profile</a></li>
             <li><a href="about.php">About Us</a></li>
+            <li><a href="logout.php">Logout</a></li>
           </ul>
-          <a href="logout.php">Logout</a>
         </div>
     </div>
         <div id="main">
-          <br>
+          <br />
           <form name="panelwide" id="search" action="/search.php">
             <input type="text" id="searchtext" name="searchtext" size={30} placeholder="Search Guides, Tasks, Journals, etc." required />
             <input type="submit" defaultValue="Search" />
@@ -181,7 +181,7 @@
     </div>
         <div id="footer">
           <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
-          <p>ZenSpace is Powered by React.</p>
+          <p>ZenSpace is Powered by PHP.</p>
       </div>
     </body>
 

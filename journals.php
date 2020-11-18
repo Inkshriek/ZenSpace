@@ -44,11 +44,21 @@
                     <li><a href="medals.php">Medals</a></li>
                     <li><a href="profile.php">Profile</a></li>
                     <li><a href="about.php">About Us</a></li>
+                    <li><a href="logout.php">Logout</a></li>
                 </ul>
-                <a href="logout.php">Logout</a>
             </div>
         </div>
         <div id="main">
+
+
+            <br>
+            <!--Journals are displayed each with their contents folded, unfolding if clicked to show them.-->
+            <!--They're organized in a chronological list, the most recent shown first.-->
+            <form class="panelwide" id="search" action="/search.php">
+                <input type="text" id="searchtext" name="searchtext" size="30" placeholder="Search Guides, Tasks, Journals, etc." required>
+                <input type="submit" value="Search">
+            </form>
+            <br>
             <form id="checkinoverlay" action="extern/addjournal.php" method="post" style="display: 
             <?php
                 if (isset($_GET["checkin"]) && $_GET["checkin"] == true) {
@@ -68,15 +78,6 @@
                 <br>
                 <input type="submit" value="Finish">
                 <button onclick="toggleCheckIn()">Cancel</button>
-            </form>
-
-
-            <br>
-            <!--Journals are displayed each with their contents folded, unfolding if clicked to show them.-->
-            <!--They're organized in a chronological list, the most recent shown first.-->
-            <form class="panelwide" id="search" action="/search.php">
-                <input type="text" id="searchtext" name="searchtext" size="30" placeholder="Search Guides, Tasks, Journals, etc." required>
-                <input type="submit" value="Search">
             </form>
             <br>
             <div class="panelwide" id="journals">
@@ -124,7 +125,7 @@
                     </div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
-            <p>ZenSpace is Powered by React.</p>
+            <p>ZenSpace is Powered by PHP.</p>
         </div>
     </body>
 

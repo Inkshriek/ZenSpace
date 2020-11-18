@@ -1,0 +1,18 @@
+.journalentry {
+        width: 400px;
+        background-color:white;
+        padding: 0px;
+        margin: 0px;
+        text-align:left;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+input#searchtext {
+width: 378px;
+height: 34px;
+border-radius: 32px;
+}

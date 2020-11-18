@@ -1,6 +1,6 @@
 input#searchtext {
     top: 48px;
-left: 327px;
+left: 57px;
 width: 478px;
 height: 34px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -9,7 +9,7 @@ opacity: 1;
 }
 
 hr {
-    height: 1px;
+    height: 5px;
     background-color: grey;
     display:block;
 }

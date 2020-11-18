@@ -10,11 +10,12 @@
 <html lang="en">
 
     <head>
-        <title>ZenSpace - Today</title>
+        <title>ZenSpace - Profile</title>
         <meta name="description" content="Meditation and Work/Life Guidance for Students">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
     </head>
 
     <body>
@@ -24,9 +25,8 @@
     </div>
             <div id ="grid">
             <div class="sidebar">
+                <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
             <ul id="nav">
-            <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
-            <br><br>
                 <li><a href="index.php">Today</a></li>
                 <li><a href="guides.php">Guides</a></li>
                 <li><a href="journals.php">Journals</a></li>
@@ -35,12 +35,16 @@
                 <li><a href="about.php">About Us</a></li>
             </ul>
         </div>
-        <div id="main">
-            <br>
+        
             <!--Profile shows basic account information from the server as well as some settings.-->
             <form class="panelwide" id="profile" action="/profilesave.php">
+            <div id="main">
+                <div id = "box">
                 <h2>Profile Details</h2>
+                <label id = "firstname">First name: </label><input type="text" id="fname" name="fname" value="firstname" required><br>
+                <label id = "lastname">Last name: </label><input type="text" id="lname" name="lname" value="lastname" required><br>
                 <label for="username">Username: </label><input type="text" id="username" name="username" value="User" required><br>
+                <label for="password">Password: </label><input type="text" id="password" name="password" value="" required><br>
                 <label for="email">Email: </label><input type="text" id="email" name="email" value="something@gmail.com" required><br>
                 <label for="location">Location: </label><input type="text" id="location" name="location" value="United States"><br>
                 <input type="checkbox" id="privatetoggle" name="privatetoggle"><label for="privatetoggle"> Make Private</label><br>
@@ -51,10 +55,10 @@
                 <input type="checkbox" id="notifstoggle" name="notifstoggle"><label for="notifstoggle"> Notifications</label><br>
                 <br>
                 <input type="submit" value="Save">
-            </form>
-            <br>
-        </div>
     </div>
+</div>
+    </form>
+</div>
         <div id="footer">
             <p>Bare in mind, to use ZenSpace to the fullest, JavaScript and CSS should always be enabled. By using ZenSpace, you agree to the usage of cookies.</p>
             <p>ZenSpace is Powered by React.</p>

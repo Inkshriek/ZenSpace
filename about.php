@@ -20,9 +20,8 @@
 </div>
             <div id="grid">
             <div class="sidebar">
+            <img src = "img/Logo.png" style="width:150px;height:150px;" alt = "logo of zenspace"/>
             <ul id="nav">
-                <img src = "img/Logo.png" style="width:200px;height:200px;" alt = "logo of zenspace"></img>
-                <br><br>
                 <li><a href="index.php">Today</a></li>
                 <li><a href="guides.php">Guides</a></li>
                 <li><a href="journals.php">Journals</a></li>

@@ -49,7 +49,7 @@
           <div id= "guides">
             <h2>Guides</h2>
             <ul>
-              <li>
+
                 <h3>Meditation</h3>
                 <div>Meditation has been used throughout many centuries as a way to hone your focus and even reduce your stress. Learning to focus can reduce your perceived stress as well as enlighten your mood. One of the techniques to meditate is called, “Mindfulness meditation” and it relies on focusing on your breathing, mind, and body. It sounds like it’s a lot of work, but it can reduce stress and it has been found to be effective at reducing stress.
                   Mindful meditation instructions
@@ -68,6 +68,7 @@
                     </iframe>
                     </li>
                     </ul>
+                    <ul>
                     <h3>Instructions</h3>
                     <ol>
                       <li>Shift your attention to your breathing</li>
@@ -80,6 +81,7 @@
                       <li>Take a deep breath two times and hold it for 2 seconds and exhale for 3 seconds</li>
                       <li>Bring yourself to the present and thank yourself for doing this to be happier</li>
                     </ol>
+                    </ul>
                     <br />
                     <button onclick="addTask('Perform Imagery Meditation')">Add To Tasks!</button>
                 </ul>
@@ -96,6 +98,7 @@
                     allowfullscreen>
                       </iframe>
                     </ul>
+                    <ul>
                       <h3>Instructions</h3>
                       <h4>Breathing</h4>
                     <ol>
@@ -115,6 +118,7 @@
                       <li>Focus on a peaceful location</li>
                       <li>Concentrate on the area</li>
                     </ol>
+                    </ul>
                     <br />
                     <a href="javascript:alert('Test');">Add To Tasks!</a>
                 </ul>
@@ -140,7 +144,7 @@
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
                     </iframe> 
-                    <h4>Instructions</h4>
+                    <h3>Instructions</h3>
                       <ol>
                       <li>Count to 4 in your head</li>
                       <li>Hold your breath for 7 seconds</li>

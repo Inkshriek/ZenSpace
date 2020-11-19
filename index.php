@@ -61,6 +61,7 @@
                 <input type="submit" value="Search">
             </form>
             <br>
+            <div id = "homegrid">
             <div class="panel" id="greeting">
                 <h2>Good Morning, <?php echo $_SESSION["user"]; ?>!</h2>
                 <div id="checkin">
@@ -118,6 +119,7 @@
                 <img src="img/quote1.jpg" height = "200" width = "200" alt=" Tip Image">
                 </div>
                 <br>
+                    </div>
                     </div>
                     </div>
                     </div>

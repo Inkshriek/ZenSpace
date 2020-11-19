@@ -45,33 +45,33 @@
             <br>
             <div class="panelwide" id="medals">
                 <h2>Medals</h2>
-                <ul class="medalslist">
-                    <li class="medal">
+                <div id="medalgrid">
+                    <div id="item1" class="medal">
                         <h4>Join ZenSpace</h4>
                         <img src="img/joinedbadge.png" style="width:150px;height:150px;" alt="Medal Image">
                         <div>Completed!</div>
-                    </li>
-                    <li class="medal">
+                    </div>
+                    <div id="item2" class="medal">
                         <h4>Shared ZenSpace with a Friend</h4>
                         <img src="img/sharedbadge.png" style="width:150px;height:150px;" alt="Medal Image">
                         <div>Completed!</div>
-                    </li>
-                    <li class="medal">
+                    </div>
+                    <div id="item3" class="medal">
                         <h4>First Guide</h4>
                         <img src="img/guidebadge.png" style="width:150px;height:150px;" alt="Medal Image">
                         <div>Completed!</div>
-                    </li>
-                    <li class="medal">
+                    </div>
+                    <div id="item4" class="medal">
                         <h4>First Journal</h4>
                         <img src="img/journalbadge.png" style="width:150px;height:150px;" alt="Medal Image">
                         <div>Completed!</div>
-                    </li>
-                    <li class="medal">
+                    </div>
+                    <div id="item5" class="medal">
                         <h4>First Check-In</h4>
                         <img src="img/checkinbadge.png" style="width:150px;height:150px;" alt="Medal Image">
                         <div>Completed!</div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <br>
         </div>

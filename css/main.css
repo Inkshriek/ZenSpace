@@ -102,3 +102,12 @@ opacity: 1;
   padding-top: 50px;
   padding-left: 250px;
 }
+
+#middle {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  background-color: #D1E8E2;
+  border-radius: 5px;
+}

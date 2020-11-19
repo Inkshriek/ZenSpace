@@ -74,6 +74,7 @@
                 <br>
                 <input type="date" id="checkindate" name="checkindate" placeholder="Select Journal Date" required>
                 <br>
+                <br>
                 <div>If a journal already exists at the specified date, it will be updated.</div>
                 <br>
                 <input type="submit" value="Finish">

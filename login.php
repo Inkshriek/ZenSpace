@@ -20,12 +20,12 @@
     <body>
         <div id="root">
 
-            <form class="panel" id="login" action="extern/login.php" method="post">
+            <form class="panel" id="middle" action="extern/login.php" method="post">
                 <h1>Login</h1>
-				<label for="username">Username</label>
-				<input type="text" name="username" class="field" maxlength="25" required>
-				<label for="password">Password</label>
-				<input type="password" name="password" class="field" maxlength="25" required>
+				<label for="username">Username</label><br>
+				<input type="text" name="username" class="field" maxlength="25" required><br><br>
+				<label for="password">Password</label><br>
+				<input type="password" name="password" class="field" maxlength="25" required><br><br>
 				<br>
 				<?php
 					if (isset($_GET["notif"])) {

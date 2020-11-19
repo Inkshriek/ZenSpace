@@ -40,11 +40,10 @@ opacity: 1;
 }
 
 .sidebar {
-    background: #D1E8E2;
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #D1E8E2;
     position: fixed;
     height: 100%;
     overflow: auto;

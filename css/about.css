@@ -32,6 +32,7 @@ opacity: 1;
 }
 
 
+
 .sidebar {
     margin: 0;
     padding: 0;
@@ -67,6 +68,7 @@ opacity: 1;
   border-top: 1px solid rgba(255,255,255,0.05);
 }    
 
+
 #main {
     padding-left:250px;
 }
@@ -74,10 +76,3 @@ opacity: 1;
 #footer {
   padding-left: 250px;
 }
-
-hr {
-    height: 1px;
-    background-color: grey;
-    display:block;
-}
-

@@ -11,9 +11,3 @@ li {
     list-style-type: none;
     text-decoration: none;
 }
-
-input#searchtext {
-width: 278px;
-height: 18px;
-border-radius: 32px;
-}

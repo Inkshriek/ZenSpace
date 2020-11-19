@@ -134,10 +134,13 @@
     ?>
 
     <!--This displays when you're not logged in.-->
-            <body>
-        <a href="login.php">You're not logged in! Log in here.</a>
-        <br>
-        <a href="signup.php">Or, sign up first if you lack an account.</a>
+        <body>
+            <div id="middle"> 
+                <h1>ZenSpace</h1>
+                <a href="login.php">You're not logged in! Log in here.</a>
+                <br>
+                <a href="signup.php">Or, sign up first if you lack an account.</a>
+            </div>
         </body>
 
     <?php

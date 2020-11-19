@@ -20,14 +20,14 @@
     <body>
         <div id="root">
 
-			<form class="panel" id="signup" action="extern/signup.php" method="post">
+			<form class="panel" id="middle" action="extern/signup.php" method="post">
 				<h1>Sign Up</h1>
-				<label for="username">Username</label>
-				<input type="text" name="username" class="field" maxlength="25" required>
-				<label for="password">Password</label>
-				<input type="password" name="password" class="field" maxlength="25" required>
-				<label for="email">Email Address</label>
-				<input type="text" name="email" class="field" maxlength="50" required>
+				<label for="username">Username</label><br>
+				<input type="text" name="username" class="field" maxlength="25" required><br><br>
+				<label for="password">Password</label><br>
+				<input type="password" name="password" class="field" maxlength="25" required><br><br>
+				<label for="email">Email Address</label><br>
+				<input type="text" name="email" class="field" maxlength="50" required><br><br>
 				<br>
 				<?php
 					if (isset($_GET["notif"])) {
